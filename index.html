@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnBYLocals - Connect with Local Teachers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">LearnBYLocals</a>
+                <div class="menu-toggle">☰</div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#teachers">Top Teachers</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><button class="btn btn-secondary" onclick="openModal('loginModal')">Login</button></li>
+                    <li><button class="btn btn-primary" onclick="openModal('registerModal')">Register</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Perfect Teacher</h1>
+            <p>Connect with qualified local teachers and coaches for personalized learning experiences</p>
+            
+            <div class="search-bar">
+                <select>
+                    <option>Select Subject</option>
+                    <option>Mathematics</option>
+                    <option>Science</option>
+                    <option>English</option>
+                    <option>Computer Science</option>
+                    <option>Music</option>
+                </select>
+                <input type="text" placeholder="Enter your location">
+                <button>Search Teachers</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose LearnBYLocals?</h2>
+                <p>Our platform makes it easy to connect with qualified teachers in your local area</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Find Local Teachers</h3>
+                    <p>Discover qualified teachers in your neighborhood for in-person coaching</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Verified Profiles</h3>
+                    <p>All teachers are verified with ratings and reviews from real students</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>Compare rates and choose teachers that fit your budget</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Easy Booking</h3>
+                    <p>Book sessions directly through our platform with just a few clicks</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Payments</h3>
+                    <p>Make secure payments online through our trusted payment gateway</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Direct Communication</h3>
+                    <p>Message teachers directly to discuss your learning needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Getting started with LearnBYLocals is simple and straightforward</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create an Account</h3>
+                    <p>Sign up as a student or teacher with your basic information</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Search for Teachers</h3>
+                    <p>Find teachers based on subject, location, price, and ratings</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Book a Session</h3>
+                    <p>Choose a convenient time slot and book your session</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Learn and Grow</h3>
+                    <p>Attend your sessions and achieve your learning goals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Teachers Section -->
+   <section id="teachers">
+    <div class="container">
+        <div class="section-title">
+            <h2>Top Teachers</h2>
+            <p>Meet some of our highly-rated teachers</p>
+        </div>
+        
+        <div class="teachers">
+            <!-- Teacher cards will go here -->
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <div class="section-title">
+            <h2>Testimonials</h2>
+            <p>Hear from our satisfied students and teachers</p>
+        </div>
+        
+        <div class="testimonial-cards">
+            <!-- Testimonial cards will go here -->
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Start Learning?</h2>
+        <p>Join LearnBYLocals today and connect with the best local teachers</p>
+        <div class="cta-buttons">
+            <button class="btn btn-primary" onclick="openModal('registerModal')">Register Now</button>
+            <button class="btn btn-light" onclick="openModal('loginModal')">Login</button>
+        </div>
+    </div>
+</section>
+<!-- Testimonials Section -->
+    <!--<section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <<h2>Success Stories</h2>
+                <p>Hear what our users have to say about their experience with FindYourGuruji</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <p class="testimonial-text">"I was struggling with mathematics for years, but after finding Mr. Sharma through FindYourGuruji, my grades improved dramatically. The platform made it so easy to find a teacher in my neighborhood!"</p>
+                <div class="testimonial-author">
+                    <div class="author-image"></div>
+                    <div>
+                        <p class="author-name">Rahul Mehra</p>
+                        <p class="author-role">12th Grade Student</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <p class="testimonial-text">"As a teacher, FindYourGuruji has helped me connect with students who truly need my expertise. The booking system and payment process are seamless, allowing me to focus on what I do best - teaching!"</p>
+                <div class="testimonial-author">
+                    <div class="author-image"></div>
+                    <div>
+                        <p class="author-name">Anjali Singh</p>
+                        <p class="author-role">Science Teacher</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Finding a coding tutor for my son was a challenge until we discovered FindYourGuruji. We were able to find a qualified teacher just 10 minutes away from our home. The results have been fantastic!"</p>
+                <div class="testimonial-author">
+                    <div class="author-image"></div>
+                    <div>
+                        <p class="author-name">Suresh Menon</p>
+                        <p class="author-role">Parent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Your Learning Journey?</h2>
+            <p>Join thousands of students and teachers who are transforming education through personalized coaching</p>
+            <div class="cta-buttons">
+                <button class="btn btn-light" onclick="openModal('registerModal')">Register as Student</button>
+                <button class="btn btn-outline" onclick="openModal('teacherModal')">Become a Teacher</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>FindYourGuruji</h3>
+                    <p>Connect with qualified local teachers for personalized learning experiences.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#teachers">Top Teachers</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>For Teachers</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Join as Teacher</a></li>
+                        <li><a href="#">Teacher Guidelines</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Teacher Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 LearnBYLocals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login to Your Account</h2>
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('studentLoginTab', 'teacherLoginTab')">Student</div>
+                <div class="tab" onclick="switchTab('teacherLoginTab', 'studentLoginTab')">Teacher</div>
+            </div>
+            
+            <div id="studentLoginTab" class="tab-content active">
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="studentEmail">Email</label>
+                        <input type="email" id="studentEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="studentPassword">Password</label>
+                        <input type="password" id="studentPassword" required>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login as Student</button>
+                    <p style="text-align: center; margin-top: 20px;">Don't have an account? <a href="#" onclick="openModal('registerModal'); closeModal('loginModal')">Register</a></p>
+                </form>
+            </div>
+            
+            <div id="teacherLoginTab" class="tab-content">
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="teacherEmail">Email</label>
+                        <input type="email" id="teacherEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="teacherPassword">Password</label>
+                        <input type="password" id="teacherPassword" required>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="teacherRememberMe">
+                        <label for="teacherRememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login as Teacher</button>
+                    <p style="text-align: center; margin-top: 20px;">Don't have an account? <a href="#" onclick="openModal('teacherModal'); closeModal('loginModal')">Register as Teacher</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Registration Modal -->
+        <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Register as Student</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="userName">Username</label>
+                    <input type="text" id="userName" required />
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" required />
+                </div>
+                <div class="form-group">
+                    <label for="regpass">Password</label>
+                    <input type="text,number" id="regpass" required />
+                </div>
+                <div class="form-group">
+                    <label for="regpass">Confirm Password</label>
+                    <input type="text,number" id="regpass" required />
+                </div>
+                <div class="form-group">
+                    <label for="regphno">Phone Number</label>
+                    <input type="number" id="regpass" required />
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                
+               
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
+
+    
+
+    
